@@ -177,21 +177,4 @@ public class DemoApplicationTests {
         return Integer.parseInt(version.substring(0, idx));
     }
 
-    /*
-     * @Test public void contextLoads() { System.out.println("************************ -> "); Connection connection = null; Statement statement =
-     * null; try { try { connection = ds.getConnection(); statement = connection.createStatement(); ((org.postgresql.PGConnection)
-     * connection).addDataType("geometry", PGgeometry.class); ResultSet r = statement.executeQuery("SELECT 'POINT(1 2)'::geometry");
-     *
-     * } catch (SQLException e) { System.err.println("Connection initialization failed, aborting."); e.printStackTrace(); throw new AssertionError();
-     * }
-     *
-     * int postgisServerMajor = 0; try { postgisServerMajor = getPostgisMajor(statement); } catch (SQLException e) {
-     * System.err.println("Error fetching PostGIS version: " + e.getMessage()); System.err.println("Is PostGIS really installed in the database?");
-     * System.exit(1); // signal the compiler that code flow ends here: throw new AssertionError(); }
-     *
-     * } finally { if (statement != null) { try { statement.close(); } catch (SQLException e) { } } if (connection != null) { try {
-     * connection.close(); } catch (SQLException e) { } } }
-     *
-     * }
-     */
 }
